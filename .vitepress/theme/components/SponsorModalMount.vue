@@ -57,7 +57,7 @@ onUnmounted(() => {
       <!-- 内容层从点击位置弹出到居中，并在关闭时回到点击位置 -->
       <Transition name="vp-pop" appear>
         <div class="vp-sponsor-modal__content" :style="{ '--from-x': fromX + 'px', '--from-y': fromY + 'px' }">
-          <img src="/sponsor.png" alt="sponsor" />
+          <img src="/image/sponsor.png" alt="sponsor" />
           <button class="vp-sponsor-modal__close" @click="close" aria-label="close">×</button>
         </div>
       </Transition>

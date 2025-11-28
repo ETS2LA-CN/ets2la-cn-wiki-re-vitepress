@@ -137,3 +137,8 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+/* 可选：固定的图片放大水平偏移（像素）。为 0 时按侧边栏宽度动态估算 */
+:root { --zoom-offset-x: 0; }
+/* 提升放大遮罩与图片层级，避免被侧边栏或其他元素覆盖 */
+.medium-zoom-overlay, .medium-zoom-image--opened { z-index: 1000; }
+
