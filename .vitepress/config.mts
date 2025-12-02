@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import {set_sidebar} from './auto_sidebar.js'
+import { set_sidebar } from './auto_sidebar.ts'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -13,10 +13,10 @@ export default defineConfig({
       { text: '主页', link: '/' },
         {
             text: '文档', items: [
-                {text: "基础", link: "/docs/base/"},
+                {text: "基础", link: "/docs/base/install"},
                 { // 带分割线的导航栏
                     items:[
-                        {text: "进阶", link: "/docs/advanced/"},
+                        {text: "进阶", link: "/docs/advanced/manual-install"},
                     ],
                 },
             ],
@@ -32,6 +32,8 @@ export default defineConfig({
       '/sponsored/': set_sidebar('/sponsored/'),
       '/': set_sidebar('')
     },
+
+    outline: 'deep',
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/ETS2LA/Euro-Truck-Simulator-2-Lane-Assist' },
