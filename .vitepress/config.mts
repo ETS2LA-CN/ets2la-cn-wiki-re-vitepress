@@ -1,6 +1,5 @@
 import { defineConfig } from 'vitepress'
-import fs from 'node:fs'
-import path from 'node:path'
+import {set_sidebar} from './auto_sidebar.js'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -27,10 +26,10 @@ export default defineConfig({
     ],
 
     sidebar: {
-      '/docs/': generateSidebar('docs'),
-      '/author/': generateSidebar('author'),
-      '/sponsored/': generateSidebar('sponsored'),
-      '/': generateSidebar('')
+      '/docs/': set_sidebar('docs'),
+      '/author/': set_sidebar('author'),
+      '/sponsored/': set_sidebar('sponsored'),
+      '/': set_sidebar('')
     },
 
     socialLinks: [
@@ -52,90 +51,3 @@ export default defineConfig({
     }
   }
 })
-
-function readFirstHeading(filePath: string): string | undefined {
-  if (!fs.existsSync(filePath)) return undefined
-  const content = fs.readFileSync(filePath, 'utf-8')
-  const lines = content.split(/\r?\n/)
-  for (const line of lines) {
-    const m = line.match(/^\s*#{1,6}\s+(.*)$/)
-    if (m) return m[1].trim()
-  }
-  const fm = content.match(/^---[\s\S]*?title:\s*(.+)[\s\S]*?---/)
-  if (fm) return fm[1].trim()
-  return undefined
-}
-
-function toDisplayName(name: string): string {
-  const n = name.replace(/-/g, ' ')
-  return n.charAt(0).toUpperCase() + n.slice(1)
-}
-
-function generateSidebar(dirRel: string) {
-  const baseDir = path.resolve(__dirname, dirRel ? `../${dirRel}` : '..')
-  const baseRoute = dirRel ? `/${dirRel}/` : '/'
-  const items: { text: string; link?: string; items?: any[] }[] = []
-
-  if (!fs.existsSync(baseDir)) return items
-
-  const indexPath = path.join(baseDir, 'index.md')
-  if (fs.existsSync(indexPath)) {
-    const fallback = baseRoute === '/' ? '首页' : toDisplayName(dirRel)
-    const text = readFirstHeading(indexPath) || fallback
-    items.push({ text, link: baseRoute })
-  }
-
-  const entries = fs.readdirSync(baseDir, { withFileTypes: true })
-  const dirEntries = entries.filter(e => e.isDirectory())
-  const fileEntries = entries.filter(e => e.isFile())
-
-  // docs 目录优先显示 base -> advanced，其余按名称排序
-  if (dirRel === 'docs') {
-    const preferred = ['base', 'advanced']
-    dirEntries.sort((a, b) => {
-      const ai = preferred.indexOf(a.name)
-      const bi = preferred.indexOf(b.name)
-      if (ai !== -1 || bi !== -1) {
-        if (ai === -1) return 1
-        if (bi === -1) return -1
-        return ai - bi
-      }
-      return a.name.localeCompare(b.name)
-    })
-  } else {
-    dirEntries.sort((a, b) => a.name.localeCompare(b.name))
-  }
-
-  for (const entry of dirEntries) {
-    if (entry.isDirectory()) {
-      const subDir = path.join(baseDir, entry.name)
-      const dirIndex = path.join(subDir, 'index.md')
-      if (fs.existsSync(dirIndex)) {
-        const text = readFirstHeading(dirIndex) || toDisplayName(entry.name)
-        items.push({ text, link: `${baseRoute}${entry.name}/` })
-      } else {
-        const mdFiles = fs.readdirSync(subDir).filter(f => f.endsWith('.md'))
-        if (mdFiles.length) {
-          const groupItems = mdFiles.map(f => {
-            const fp = path.join(subDir, f)
-            const text = readFirstHeading(fp) || toDisplayName(f.replace(/\.md$/, ''))
-            const link = `${baseRoute}${entry.name}/${f.replace(/\.md$/, '')}`
-            return { text, link }
-          })
-          items.push({ text: toDisplayName(entry.name), items: groupItems })
-        }
-      }
-    }
-  }
-
-  for (const entry of fileEntries) {
-    if (entry.name.endsWith('.md') && entry.name !== 'index.md') {
-      const fp = path.join(baseDir, entry.name)
-      const text = readFirstHeading(fp) || toDisplayName(entry.name.replace(/\.md$/, ''))
-      const link = `${baseRoute}${entry.name.replace(/\.md$/, '')}`
-      items.push({ text, link })
-    }
-  }
-
-  return items
-}
