@@ -52,5 +52,11 @@ export default defineConfig({
     footer: {
       message: '<a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">苏ICP备2025160641号-3</a> | <a href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32120202010796" target="_blank" rel="noopener">苏公网安备32120202010796号</a>'
     }
-  }
+  },
+    //图片懒加载
+    markdown:{
+      image:{
+          lazyLoading:true
+      }
+    }
 })

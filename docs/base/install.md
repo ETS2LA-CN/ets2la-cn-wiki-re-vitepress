@@ -4,11 +4,11 @@ description: 使用exe安装程序自动完成安装
 layout: doc
 ---
 
-## 准备工作
+# 准备工作 {#prepare}
 
-### 1. 下载并安装C++ runtime
+## 1. 下载并安装C++ runtime
 
-#### 1.1. 下载C++ runtime
+### 1.1. 下载C++ runtime
 访问[微软官方地址](https://aka.ms/vs/17/release/vc_redist.x64.exe)进行下载
 
 ### 1.2. 安装C++ runtime  
@@ -17,19 +17,19 @@ layout: doc
 如果你双击打开C++ runtime的安装程序是这样的，这表明你已经有了基础的环境，直接点击 `关闭`即可。 
 ![](https://tc.ets2la.cn/d/img/25-12/20251202094207.png)
 
-## 安装软件
+# 安装软件
 
-### 2.下载安装程序并完成安装
+## 2.下载安装程序并完成安装
 
-#### 2.1. 下载安装程序
+### 2.1. 下载安装程序
 前往软件在[GitHub](https://github.com)上的[发布页](https://github.com/ETS2LA/installer/releases)，下载最新地安装程序
 ![](https://tc.ets2la.cn/d/img/25-12/20251202105027.png)
 ::: tip 提示
 如果你无法通过GitHub下载到安装程序，我们同样提供[镜像下载](https://www.ets2la.cn/installer)  
-ps:使用镜像下载的文件会在文件名中携带更新日期信息，例如：`ETS2LA-Windows-Installer(update-10-10).exe`
+<font color="#ff0000">PS</font>:使用镜像下载的文件会在文件名中携带更新日期信息，例如：`ETS2LA-Windows-Installer(update-10-10).exe`
 :::
 
-#### 2.2. 运行安装程序
+### 2.2. 运行安装程序
 双击运行刚才下载的安装程序，可能会出现`Windows defender`的提示，直接点击`更多信息`，展开之后选择`仍要运行`即可。
 ![](https://tc.ets2la.cn/d/img/25-12/20250721084016.png)  
 在完成上一步之后会来到选择语言的界面，选择`Simplified Chinese`并点击OK即可。  
@@ -52,3 +52,7 @@ ps:使用镜像下载的文件会在文件名中携带更新日期信息，例�
 ![](https://tc.ets2la.cn/d/img/25-12/20251202131000.png)  
 安装完成后**取消**勾选`启动ETS2LA`，然后点击完成  
 ![](https://tc.ets2la.cn/d/img/25-12/20251202131048.png)
+::: tip 提示
+这里建议取消勾选`启动ETS2LA`，因为在启动ETS2LA时会下载一些文件，如果你的网络不好，可能会卡在下载文件上，导致每次启动都会出现警告；在后面的教程中
+会教如何解决
+:::

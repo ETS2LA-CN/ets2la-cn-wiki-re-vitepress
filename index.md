@@ -45,7 +45,7 @@ features:
 
 ## 许可协议
 本教程名为： ETS2LA 中国区安装与使用指南
-由 https://goodnightan.com，https://github.com/Srlily, https://space.bilibili.com/357816575 ,https://space.bilibili.com/3493113874090879 共同创作。
+由 [晚安](https://goodnightan.com)，[Srlily](https://github.com/Srlily), [MR-UIAW](https://space.bilibili.com/357816575) ,[BGYdook](https://space.bilibili.com/3493113874090879) 共同创作。
 
 本教程采用 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议 (CC BY-NC-SA 4.0) 进行许可。
 
