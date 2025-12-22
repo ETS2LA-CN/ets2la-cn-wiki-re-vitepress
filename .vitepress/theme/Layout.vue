@@ -29,14 +29,14 @@ const updateUptime = () => {
 }
 
 const updateVersionNav = () => {
-  const isV4 = route.path.includes('/version/v4/')
-  const headerText = isV4 ? 'v4' : 'v3'
+  const isV3 = route.path.includes('/version/v3/')
+  const headerText = isV3 ? 'v3' : 'v2'
   
   // 1. 尝试修改响应式数据 (如果 theme.nav 是响应式的)
   try {
     if (theme.value.nav) {
-      // 查找包含 v3 或 v4 的导航项
-      const item = theme.value.nav.find((i: any) => i.text && (i.text.includes('v3') || i.text.includes('v4')))
+      // 查找包含 v2 或 v3 的导航项
+      const item = theme.value.nav.find((i: any) => i.text && (i.text.includes('v2') || i.text.includes('v3')))
       if (item) {
         item.text = headerText
       }
@@ -51,8 +51,8 @@ const updateVersionNav = () => {
     const elements = document.querySelectorAll('.VPNavBarMenuGroup .text')
     elements.forEach(el => {
       const text = el.textContent?.trim()
-      // 只要包含 v3 或 v4 就更新，不再依赖 "版本" 前缀
-      if (text && (text.includes('v3') || text.includes('v4'))) {
+      // 只要包含 v2 或 v3 就更新，不再依赖 "版本" 前缀
+      if (text && (text.includes('v2') || text.includes('v3'))) {
         el.textContent = headerText
       }
     })

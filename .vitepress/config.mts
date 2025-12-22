@@ -16,22 +16,22 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '主页', link: '/' },
-      { text: '文档', link: '/version/v3/docs/' },
+      { text: '文档', link: '/version/v2/docs/' },
       { text: '作者', link: '/author/' },
         { text: '关于', link: '/about/' },
       { text: '赞助名单', link: '/sponsored/' },
       {
-        text: 'v3',
+        text: 'v2',
         items: [
-          { text: 'v3 (当前)', link: '/version/v3/docs/' },
-          { text: 'v4 (重写中)', link: '/version/v4/' }
+          { text: 'v2 (当前)', link: '/version/v2/docs/' },
+          { text: 'v3 (重写中)', link: '/version/v3/' }
         ]
       }
     ],
 
     sidebar: {
-      '/version/v3/docs/': set_sidebar('/version/v3/docs/'),
-      '/version/v4/': set_sidebar('/version/v4/'),
+      '/version/v2/docs/': set_sidebar('/version/v2/docs/'),
+      '/version/v3/': set_sidebar('/version/v3/'),
       '/author/': set_sidebar('/author/'),
       '/sponsored/': set_sidebar('/sponsored/'),
       '/about/': set_sidebar('/about/'),
