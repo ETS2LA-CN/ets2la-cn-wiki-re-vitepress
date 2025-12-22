@@ -2,12 +2,29 @@
 // 为文档图片启用点击放大，并在放大时根据侧边栏宽度向右偏移，避免被遮挡
 import DefaultTheme from 'vitepress/theme'
 import SponsorModalMount from './components/SponsorModalMount.vue'
-import { onMounted, watch } from 'vue'
+import { onMounted, watch, onUnmounted } from 'vue'
 import { useRoute } from 'vitepress'
 import mediumZoom from 'medium-zoom'
 
 // 保存当前的 medium-zoom 实例，便于路由切换时卸载并重新挂载
 let zoom: ReturnType<typeof mediumZoom> | null = null
+let uptimeTimer: number | null = null
+
+const updateUptime = () => {
+  const el = document.getElementById('site-uptime')
+  if (!el) return
+  // 修正用户提供的2026年为2025年，以确保是过去的时间
+  const startTime = new Date('2025-05-24T10:05:00').getTime()
+  const now = new Date().getTime()
+  const diff = now - startTime
+  
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24))
+  const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+  const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))
+  
+  el.innerText = `站点已运行${days}天 ${hours}小时 ${minutes}分钟`
+}
+
 const apply = () => {
   // 只作用于文档区域中的普通图片，排除站点 Logo 与显式禁用的图片
   const selector = '.vp-doc img:not(.logo):not([data-no-zoom])'
@@ -44,11 +61,23 @@ const apply = () => {
 const route = useRoute()
 onMounted(() => {
   // 初次挂载后异步应用，确保文档图片已渲染
-  requestAnimationFrame(apply)
+  requestAnimationFrame(() => {
+    apply()
+    updateUptime()
+  })
+  uptimeTimer = window.setInterval(updateUptime, 60000)
 })
+
 watch(() => route.path, () => {
   // 路由变更时重新应用放大绑定
   apply()
+  // 路由变更也更新一下时间
+  setTimeout(updateUptime, 100)
+})
+
+onUnmounted(() => {
+  if (zoom) zoom.detach()
+  if (uptimeTimer) clearInterval(uptimeTimer)
 })
 </script>
 

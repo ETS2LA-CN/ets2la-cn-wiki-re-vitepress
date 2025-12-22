@@ -7,7 +7,8 @@ export default defineConfig({
   description: "ETS2LA 的中文文档",
   ignoreDeadLinks: true,
   head: [
-    ['link', { rel: 'icon', href: '/image/ets2la-cn.png' }]
+    ['link', { rel: 'icon', href: '/image/ets2la-cn.png' }],
+    ['script', { defer: '', src: 'https://static.goodnightan.com/script.js', 'data-website-id': '2b74bcbe-2fa0-45a5-a4a0-39840310cf5a' }]
   ],
   themeConfig: {
       siteTitle: "ETS2LA 中文维基",
@@ -18,11 +19,19 @@ export default defineConfig({
       { text: '文档', link: '/version/v3/docs/' },
       { text: '作者', link: '/author/' },
         { text: '关于', link: '/about/' },
-      { text: '赞助名单', link: '/sponsored/' }
+      { text: '赞助名单', link: '/sponsored/' },
+      {
+        text: ' v3',
+        items: [
+          { text: 'v3 (当前)', link: '/version/v3/docs/' },
+          { text: 'v4 (重写中)', link: '/version/v4/' }
+        ]
+      }
     ],
 
     sidebar: {
       '/version/v3/docs/': set_sidebar('/version/v3/docs/'),
+      '/version/v4/': set_sidebar('/version/v4/'),
       '/author/': set_sidebar('/author/'),
       '/sponsored/': set_sidebar('/sponsored/'),
       '/about/': set_sidebar('/about/'),
@@ -51,7 +60,7 @@ export default defineConfig({
       ariaLabel: 'alipay link' }
     ],
     footer: {
-      message: '<a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">苏ICP备2025160641号-3</a> | <a href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32120202010796" target="_blank" rel="noopener">苏公网安备32120202010796号</a>'
+      message: '<a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">苏ICP备2025160641号-3</a> | <a href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32120202010796" target="_blank" rel="noopener">苏公网安备32120202010796号</a> | <span id="site-uptime"></span>'
     }
   },
     //图片懒加载
