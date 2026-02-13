@@ -3,6 +3,6 @@ ETS2LA-CN教程的官方文档
 
 [查看文档](https://docs.ets2la.cn/) ｜ [问题提交](https://github.com/ETS2LA/Euro-Truck-Simulator-2-Lane-Assist/issues)
 
-[ETS2LA](ets2la.cn)是一款开源免费的适用于欧卡2/美卡的辅助驾驶程序
+[ETS2LA](https://ets2la.cn/)是一款开源免费的适用于欧卡2/美卡的辅助驾驶程序
 
 ![image](https://github.com/ETS2LA-CN/ets2la-cn-wiki-re-vitepress/blob/main/public/image/ETS2LAwiki.png)

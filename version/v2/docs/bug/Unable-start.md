@@ -43,3 +43,19 @@ layout: doc
 ::: details 办法
 在 设置-全局设置-变量 中勾选上 缓慢启动，如已勾选上 缓慢启动 后仍然无法加载插件，请设置 32~64GB 的虚拟内存
 :::
+## 4.启动ETS2LA时浏览器疯狂弹谷歌广告的问题
+<video width="720" controls>
+  <source src="https://tc.ets2la.cn/d/img/25-12/output.mp4" type="video/mp4">
+</video>
+
+::: details 原因
+您正在使用老旧的 Internet Explorer 浏览器，ETS2LA不支持 该网站需要新的 WebView2 Runtime组件
+:::
+
+::: details 办法1
+我们使用[Microsoft Edge WebView2](https://developer.microsoft.com/zh-cn/microsoft-edge/webview2/?form=MA13LH#download)来安装新的 WebView2 Runtime组件，然后重启ETS2LA即可
+:::
+
+::: details 办法2
+在启动脚本，也就是快捷方式对应的start.bat（在ETS2LA的根目录）中编辑里面的 "cd app && python main.py" 后面追加 --local ，强制其在本地模式下运行，设置为本地模式后，应该就无法打开APP的前端了(就是打开软件时弹出的窗口)，但是可以通过 `app.ets2la.cn` (国内)或者 `app.ets2la.com` (海外)打开，前提是你必须在电脑里启动ETS2LA
+:::
