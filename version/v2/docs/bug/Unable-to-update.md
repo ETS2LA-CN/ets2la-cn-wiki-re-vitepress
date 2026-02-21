@@ -26,4 +26,4 @@ git checkout origin/main
 ![](https://tc.ets2la.cn/d/img/25-12/97834EB548ED24098FDB0C1784197285.png)
 
 ::: tip 注意
-在继续[软件外](./base/use.md#update-software-out)更新时，需要先关闭ETS2LA。
+在继续[软件外](../base/use.md#update-software-out)更新时，需要先关闭ETS2LA。
