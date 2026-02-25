@@ -8,15 +8,18 @@ layout: doc
 这里总结了可能遇到的问题以及解决方案。
 
 ## 1.访问被拒绝
-如果你在使用ETS2LA/访问[ETS2LA](https://ets2la.cn/)出现了下面这张图中的内容/访问显示 `567`，
+如果你在使用ETS2LA/访问[ETS2LA](https://ets2la.cn/)国内站点时出现了下面这张图中的内容/访问显示 `567`，请求已被站点的安全策略拦截的字样
 ![](https://tc.ets2la.cn/d/img/25-12/20260215194459791.png)
 
 ::: details  原因
-因为你开了梯子/VPN/科学上网/你在外国，导致ip限制，无法访问
+因为你开了梯子/VPN/科学上网/你在外国，导致ip限制，触发了edgeone的防护导致无法访问
 :::
 
 ::: details 办法
-关闭你的梯子/VPN/科学上网即可，如果你在国外，请使用 [app.ets2la.com](https://app.ets2la.com/) 源 / [ets2la.com](https://ets2la.com/) 网站
+关闭你的梯子/VPN/科学上网即可，如果你在国外，请使用 [app.ets2la.com](https://app.ets2la.com/) 源 / [ets2la.com](https://ets2la.com/) 
+
+关于软件的镜像切换，右键ets2la,打开文件所在位置，然后对着start.bat文件右键，在后面先空格然后输入 `--frontend-url https://app.ets2la.com`
+![](https://tc.ets2la.cn/d/img/25-12/9ca89646a34fe90f912b88b33b9d5224.png)
 :::
 
 
@@ -38,7 +41,6 @@ layout: doc
 ## 3.ffmpeg下载失败
 如果你在安装完成之后勾选了打开ETS2LA的话你有很大概率会在控制台中看到下面这张图中的内容，这时不要紧张和害怕，有解决办法的
 ![](https://tc.ets2la.cn/d/img/25-12/20251213200230431.png)
-原因：因为FFmpeg是从[www.gyan.dev](www.gyan.dev)位于国外的服务器上下载，加上[www.gyan.dev](www.gyan.dev)到国内的网络连接不稳定、经常中断，导致下载失败，因此你才会在ETS2LA的控制台中看到报错信息。
 
 ::: details 原因
 因为FFmpeg是从[www.gyan.dev](www.gyan.dev)位于国外的服务器上下载，加上[www.gyan.dev](www.gyan.dev)到国内的网络连接不稳定、经常中断，导致下载失败，因此你才会在ETS2LA的控制台中看到报错信息。
