@@ -17,8 +17,9 @@ export default defineConfig({
     nav: [
       { text: '主页', link: '/' },
       { text: '文档', link: '/version/v2/docs/' },
+      { text: '更新&新闻', link: '/updates/' },
       { text: '作者', link: '/author/' },
-        { text: '关于', link: '/about/' },
+      { text: '关于', link: '/about/' },
       { text: '赞助名单', link: '/sponsored/' },
       {
         text: 'v2',
@@ -32,6 +33,7 @@ export default defineConfig({
     sidebar: {
       '/version/v2/docs/': set_sidebar('/version/v2/docs/'),
       '/version/v3/': set_sidebar('/version/v3/'),
+      '/updates/': set_sidebar('/updates/'),
       '/author/': set_sidebar('/author/'),
       '/sponsored/': set_sidebar('/sponsored/'),
       '/about/': set_sidebar('/about/'),
