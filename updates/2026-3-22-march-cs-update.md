@@ -99,7 +99,7 @@ tags:
 #### 墨染 - SimHub 仪表支持 环境可视化显示
 
 <video controls width="640">
-  <source src="/public/videos/2026-3-16-scania.mp4" type="video/mp4" />
+  <source src="/videos/2026-3-16-scania.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>  
 *来源不可靠*
@@ -113,7 +113,7 @@ tags:
 #### Luuukske - MonoCruise
 
 <video controls width="640">
-  <source src="/public/videos/2026-3-16-monocruise.mp4" type="video/mp4" />
+  <source src="/videos/2026-3-16-monocruise.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>  
 Source: https://github.com/luuukske/MonoCruise
