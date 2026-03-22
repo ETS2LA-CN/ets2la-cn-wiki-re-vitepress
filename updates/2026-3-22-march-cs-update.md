@@ -100,7 +100,7 @@ tags:
 
 <video controls width="640">
   <source src="/videos/2026-3-16-scania.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
+  您的浏览器不支持播放视频。
 </video>  
 *来源不可靠*
 
@@ -114,6 +114,6 @@ tags:
 
 <video controls width="640">
   <source src="/videos/2026-3-16-monocruise.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
+  您的浏览器不支持播放视频。
 </video>  
-Source: https://github.com/luuukske/MonoCruise
+来源: https://github.com/luuukske/MonoCruise
