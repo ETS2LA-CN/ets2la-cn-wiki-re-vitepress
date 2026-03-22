@@ -8,7 +8,12 @@ export default defineConfig({
   ignoreDeadLinks: true,
   head: [
     ['link', { rel: 'icon', href: '/image/ets2la-cn.png' }],
-    ['script', { defer: '', src: 'https://static.goodnightan.com/script.js', 'data-website-id': '2b74bcbe-2fa0-45a5-a4a0-39840310cf5a' }]
+    ['script', { defer: '', src: 'https://static.goodnightan.com/script.js', 'data-website-id': '2b74bcbe-2fa0-45a5-a4a0-39840310cf5a' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:url', content: 'https://docs.ets2la.com/' }],
+    ['meta', { property: 'og:title', content: 'ETS2LA 中文维基 - ETS2LA 中文使用指南' }],
+    ['meta', { property: 'og:description', content: '一个专为 ETS2LA 中国社区编写的使用指南' }],
+    ['meta', { property: 'og:image', content: 'https://docs.ets2la.com/logo.png' }],
   ],
   themeConfig: {
       siteTitle: "ETS2LA 中文维基",
