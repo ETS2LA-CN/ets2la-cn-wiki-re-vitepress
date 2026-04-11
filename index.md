@@ -42,3 +42,14 @@ features:
 5. 如果你正在使用 [TrucksBook](https://trucksbook.eu/)，请不要使用 ETS2LA，建议删除；目前 TrucksBook 官方已发表声明不允许使用 ETS2LA，使用者会被封禁账号，所以不要使用。
 6. 如果你正在使用 [TruckersMP](https://truckersmp.com/)，你仍然可以继续使用 ETS2LA，但在 TruckersMP 服务器中因为使用 ETS2LA 而发生碰撞导致的后果（如账号封禁），ETS2LA 不对此负任何责任。
 :::
+
+## 第三方服务
+> [!CAUTION] 错误
+> 所有人在未取得ETS2LA国内镜像站运营者 **晚安(QQ:1804832964)** 同意的情况下均不得将任何关于 ETS2LA国内镜像站 的任何链接/地址用于第三方服务（包括但不限于[SimHub](https://www.simhubdash.com/)）
+>
+> 如果你确实需要在第三方应用中使用 ETS2LA相关的链接/地址，请自行部署或咨询 **晚安(QQ:1804832964)** 进行付费服务
+>
+>相关仓库：
+>- 前端：[https://github.com/ETS2LA/frontend/tree/gh-pages](https://github.com/ETS2LA/frontend/tree/gh-pages)
+>- 可视化左侧：[https://github.com/ETS2LA/maps/tree/pages](https://github.com/ETS2LA/maps/tree/pages)
+>- 可视化右侧：[https://github.com/ETS2LA/visualization](https://github.com/ETS2LA/visualization)
