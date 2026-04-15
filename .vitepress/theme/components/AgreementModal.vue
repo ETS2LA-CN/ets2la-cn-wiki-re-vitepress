@@ -3,16 +3,25 @@ import { ref, onMounted } from 'vue'
 import { useRouter } from 'vitepress'
 
 const router = useRouter()
+const STORAGE_KEY = 'ets2la-agreement-agreed'
 const show = ref(false)
 const agreed = ref(false)
 
 function open() {
+  // 从 localStorage 读取同意状态
+  const stored = localStorage.getItem(STORAGE_KEY)
+  if (stored === 'true') {
+    agreed.value = true
+    show.value = false
+    return
+  }
   show.value = true
   agreed.value = false
 }
 
 function handleAgree() {
   if (agreed.value) {
+    localStorage.setItem(STORAGE_KEY, 'true')
     show.value = false
   }
 }

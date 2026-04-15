@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm docs:dev --host)",
+      "Bash(curl -s http://localhost:5173/version/v2/docs/base/page.html)",
+      "Bash(xxd d:/Workspace/ets2la-cn-wiki-re-vitepress/.vitepress/theme/style.css)",
+      "Bash(taskkill /F /IM node.exe)",
+      "Bash(curl -s http://localhost:5174/)"
+    ]
+  }
+}
