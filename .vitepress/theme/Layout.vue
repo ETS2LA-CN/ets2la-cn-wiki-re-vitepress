@@ -137,8 +137,14 @@ onMounted(() => {
 })
 
 watch(() => route.path, () => {
-  // 路由变更时重新应用放大绑定
-  apply()
+  // 路由变更时重新应用放大绑定，等待新页面图片渲染完成
+  requestAnimationFrame(() => {
+    apply()
+  })
+  // 额外延迟确保懒加载图片也完成
+  setTimeout(() => {
+    apply()
+  }, 400)
   // 路由变更也更新一下时间
   setTimeout(() => {
     updateUptime()
