@@ -2,6 +2,7 @@
 // 为文档图片启用点击放大，并在放大时根据侧边栏宽度向右偏移，避免被遮挡
 import DefaultTheme from 'vitepress/theme'
 import SponsorModalMount from './components/SponsorModalMount.vue'
+import SponsorSidebarButton from './components/SponsorSidebarButton.vue'
 import { onMounted, watch, onUnmounted } from 'vue'
 import { useRoute, useData } from 'vitepress'
 import mediumZoom from 'medium-zoom'
@@ -154,6 +155,10 @@ onUnmounted(() => {
 
 <template>
   <DefaultTheme.Layout>
+    <!-- 侧边栏插槽：在侧边栏底部添加赞助按钮 -->
+    <template #sidebar-nav-after>
+      <SponsorSidebarButton />
+    </template>
     <!-- 底部插槽：在所有页面统一渲染 SponsorModalMount -->
     <template #layout-bottom>
       <SponsorModalMount />
