@@ -26,7 +26,7 @@ let el: HTMLAnchorElement | null = null
 
 onMounted(() => {
   // 通过 aria-label 精确匹配要拦截的社交链接
-  el = document.querySelector('a[aria-label="alipay link"]') as HTMLAnchorElement | null
+  el = document.querySelector('a[aria-label="sponsor link"]') as HTMLAnchorElement | null
   if (el) {
     // 拦截图标点击，记录点击位置用于动画，并阻止默认跳转
     el.addEventListener('click', (e: MouseEvent) => {
@@ -57,7 +57,7 @@ onUnmounted(() => {
       <!-- 内容层从点击位置弹出到居中，并在关闭时回到点击位置 -->
       <Transition name="vp-pop" appear>
         <div class="vp-sponsor-modal__content" :style="{ '--from-x': fromX + 'px', '--from-y': fromY + 'px' }">
-          <img src="/image/sponsor.png" alt="sponsor" />
+          <img src="/image/sponsor.png" alt="微信赞助" />
           <button class="vp-sponsor-modal__close" @click="close" aria-label="close">×</button>
         </div>
       </Transition>
@@ -79,7 +79,7 @@ onUnmounted(() => {
  /* 内容容器（居中卡片） */
  .vp-sponsor-modal__content {
   position: relative;
-  max-width: min(90vw, 560px);
+  max-width: min(90vw, 1500px);
   max-height: 90vh;
   background: var(--vp-c-bg);
   border-radius: 12px;

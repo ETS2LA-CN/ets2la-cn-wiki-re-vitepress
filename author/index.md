@@ -48,7 +48,8 @@ title: 作者
       <a class="btn" href="https://goodnightan.com" target="_blank" rel="noopener">Homepage</a>
     </div>
     <div class="media">
-      <img src="/image/sponsor.png" alt="赞助二维码" />
+      <img src="/image/vx.png" alt="微信赞助二维码" />
+      <img src="/image/alipay.png" alt="支付宝赞助二维码" />
       <a href="https://afdian.com/a/goodnightan" target="_blank" rel="noopener">
         <img src="/image/afdian.png" alt="爱发电" />
       </a>
