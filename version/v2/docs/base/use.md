@@ -7,7 +7,7 @@ layout: doc
 # 基础使用
 
 ## 1. 添加文件 {#add-file}
-由于软件需要从远程服务器下载[ffmpeg](https://ffmpeg.org/)，但是因为ffmpeg的服务器的并不在国内，所以会出现下载失败的情况；为了确保软件能够正常运行，我们建议使用手动添加的方式来安装ffmpeg；从[ETS2LA国内镜像下载站](https://www.ets2la.cn/ffmpeg)下载压缩包，解压下载的安装包，将里面的ETS2LA文件夹复制到ETS2LA的安装目录/盘符中即可，这样在稍后启动ETS2LA的时候就不需要下载ffmpeg也不会弹出错误提示了。
+由于软件需要从远程服务器下载[ffmpeg](https://ffmpeg.org/)，但是因为ffmpeg的服务器的并不在国内，所以会出现下载失败的情况；为了确保软件能够正常运行，我们建议使用手动添加的方式来安装ffmpeg；从[ETS2LA国内镜像下载站](https://download.ets2la.cn/d/downloads/ffmpeg.7z)下载压缩包，解压下载的安装包，将里面的ETS2LA文件夹复制到ETS2LA的安装目录/盘符中即可，这样在稍后启动ETS2LA的时候就不需要下载ffmpeg也不会弹出错误提示了。
 
 ## 2. 启动软件
 双击打开位于桌面的ETS2LA图标或位于安装目录中的`start.bat`文件；打开时会同时启动控制台（目前无法关闭），稍作等待之后会弹出UI页面；
