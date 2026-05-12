@@ -36,6 +36,11 @@ onUnmounted(() => {
     </div>
   </div>
 
+  <a class="sponsor-sidebar-btn" href="https://www.rainyun.com/Mjg2Njg0_" target="_blank" rel="noopener">
+    <img src="/image/rainyun.png" alt="雨云科技赞助" class="rainyun-img" />
+    <span class="rainyun-text">该项目由雨云赞助</span>
+  </a>
+
   <Teleport to="body">
     <!-- 遮罩层 -->
     <Transition name="vp-fade" appear>
@@ -78,6 +83,12 @@ onUnmounted(() => {
   overflow: hidden;
 }
 
+.sponsor-sidebar-btn a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
 .sponsor-btn-inner::before {
   content: '';
   position: absolute;
@@ -111,6 +122,34 @@ onUnmounted(() => {
 
 .sponsor-text {
   letter-spacing: 2px;
+}
+
+.sponsor-btn-inner.rainyun {
+  background: linear-gradient(135deg, #1a73e8 0%, #1557b0 50%, #0d47a1 100%);
+  box-shadow: 0 4px 12px rgba(26, 115, 232, 0.3);
+}
+
+.rainyun-img {
+  display: block;
+  width: 100%;
+  max-width: 180px;
+  margin: 0 auto 8px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.rainyun-img:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.rainyun-text {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: var(--vp-c-text-2);
+  margin-bottom: 8px;
 }
 
 .vp-sponsor-modal {

@@ -30,7 +30,7 @@ const updateUmamiStats = async () => {
 
     const startAt = 1733333200000
     const endAt = Date.now()
-    const statsRes = await fetch(`https://static.ets2la.cn/api/websites/2b74bcbe-2fa0-45a5-a4a0-39840310cf5a/stats?startAt=${startAt}&endAt=${endAt}`, {
+    const statsRes = await fetch(`https://static.goodnightan.com/api/websites/2b74bcbe-2fa0-45a5-a4a0-39840310cf5a/stats?startAt=${startAt}&endAt=${endAt}`, {
       headers: {
         'x-umami-share-token': umamiToken
       }
