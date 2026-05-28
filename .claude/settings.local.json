@@ -6,7 +6,9 @@
       "Bash(xxd d:/Workspace/ets2la-cn-wiki-re-vitepress/.vitepress/theme/style.css)",
       "Bash(taskkill /F /IM node.exe)",
       "Bash(curl -s http://localhost:5174/)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(xxd \"d:\\\\Workspace\\\\ets2la-cn-wiki-re-vitepress\\\\updates\\\\2026-5-27-may-cs-update.md\")",
+      "Bash(xxd)"
     ]
   }
 }
