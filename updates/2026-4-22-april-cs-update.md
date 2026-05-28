@@ -23,7 +23,7 @@ tags: [news, C#]
 在过去的一个月里，我把大部分时间都花费在梳理TruckLib提供的所有数据上。我围绕这些数据构建了封装层，以便ETS2LA能更方便地使用，并着手开发利用这些数据的初步概念验证插件。其中一个插件是一个基础的车道保持插件，我仅用几小时就使其成功运行。下方附有该插件运行的视频。
 
 <video controls width="100%">
-  <source src="/videos/2026-4-19-Lane-Assist.mp4" type="video/mp4" />
+  <source src="/videos/2026-4-19-lane-assist.mp4" type="video/mp4" />
   您的浏览器不支持播放视频。
 </video>
 *初始 LKAS 插件在 Linux 上的 ETS2LA 中运行*
