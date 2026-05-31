@@ -14,6 +14,27 @@ layout: doc
 ::: warning ⚠️注意
 当游戏出现重大更新时，建议重新安装一遍SDK，如果你很长时间没有使用 ETS2LA，那么我们也建议你在使用ETS2LA之前重新安装一下SDK。
 :::
+::: details 内存不足的小tips (点我展开查看)
+1. 前往[GitHub](https://github.com/Meloong-Git/PCL/releases)下载PCL
+
+![](https://tc.tianyi.world/d/img/tutorial/20260531100054539.png)
+
+2. 打开压缩包 并再次打开里面的最新正式版 
+
+![](https://tc.tianyi.world/d/img/tutorial/20260531100232518.png)
+
+3. 把里面的exe解压出来并打开
+
+![](https://tc.tianyi.world/d/img/tutorial/20260531100352403.png)
+
+4. 点击更多
+
+![](https://tc.tianyi.world/d/img/tutorial/20260531100544264.png)
+
+5. 点击百宝箱-内存优化 等待一会即可
+
+![](https://tc.tianyi.world/d/img/tutorial/20260531100707277.png)
+:::
 
 ## ETS2LA
 ### 1. 缺少必要的Python子模块
