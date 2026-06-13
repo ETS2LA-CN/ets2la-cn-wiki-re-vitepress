@@ -36,11 +36,6 @@ onUnmounted(() => {
     </div>
   </div>
 
-  <a class="sponsor-sidebar-btn" href="https://www.rainyun.com/Mjg2Njg0_" target="_blank" rel="noopener">
-    <img src="/image/rainyun.png" alt="雨云科技赞助" class="rainyun-img" />
-    <span class="rainyun-text">该项目由雨云赞助</span>
-  </a>
-
   <Teleport to="body">
     <!-- 遮罩层 -->
     <Transition name="vp-fade" appear>
