@@ -19,7 +19,7 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 ```
 
 当终端中出现下图所显示的内容时则表明完成安装
-![](https://tc.ets2la.cn/d/img/25-12/20250911093034.png)
+![](https://tc.ets2la.cn/25-12/20250911093034.png)
 
 ## 3. 克隆仓库
 

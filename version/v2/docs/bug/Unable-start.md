@@ -5,42 +5,45 @@ layout: doc
 ---
 
 # 无法启动
+
 这里总结了可能遇到的问题以及解决方案。
 
 ## 1.访问被拒绝
-如果你在使用ETS2LA/访问[ETS2LA](https://ets2la.cn/)国内站点时出现了下面这张图中的内容/访问显示 `567`，请求已被站点的安全策略拦截的字样
-![](https://tc.ets2la.cn/d/img/25-12/20260215194459791.png)
 
-::: details  原因
+如果你在使用ETS2LA/访问[ETS2LA](https://ets2la.cn/)国内站点时出现了下面这张图中的内容/访问显示 `567`，请求已被站点的安全策略拦截的字样
+![](https://tc.ets2la.cn/25-12/20260215194459791.png)
+
+::: details 原因
 因为你开了梯子/VPN/科学上网/你在外国，导致ip限制，触发了edgeone的防护导致无法访问
 :::
 
 ::: details 办法
-关闭你的梯子/VPN/科学上网即可，如果你在国外，请使用 [app.ets2la.com](https://app.ets2la.com/) 源 / [ets2la.com](https://ets2la.com/) 
+关闭你的梯子/VPN/科学上网即可，如果你在国外，请使用 [app.ets2la.com](https://app.ets2la.com/) 源 / [ets2la.com](https://ets2la.com/)
 
 关于软件的镜像切换，右键ets2la,打开文件所在位置，然后对着start.bat文件右键，在后面先空格然后输入 `--frontend-url https://app.ets2la.com`
-![](https://tc.ets2la.cn/d/img/25-12/9ca89646a34fe90f912b88b33b9d5224.png)
+![](https://tc.ets2la.cn/25-12/9ca89646a34fe90f912b88b33b9d5224.png)
 :::
 
-
 ## 2.WebView2 丢失
-如果你在出现了下面这这些图中的内容，
-![](https://tc.ets2la.cn/d/img/25-12/20251213195744330.png)
-或
-![](https://tc.ets2la.cn/d/img/25-12/fcaffdf4f63272fb66130fc03bd12a2e.png)
 
-::: details  原因
+如果你在出现了下面这这些图中的内容，
+![](https://tc.ets2la.cn/25-12/20251213195744330.png)
+或
+![](https://tc.ets2la.cn/25-12/fcaffdf4f63272fb66130fc03bd12a2e.png)
+
+::: details 原因
 因为系统缺少`Microsoft Edge WebView2 Runtime`组件导致的，ETS2LA使用WebView2来渲染界面，如果没有这个组件的话就会出现上图中的内容
 :::
 
 ::: details 办法
 从[Microsoft Edge WebView2](https://developer.microsoft.com/zh-cn/microsoft-edge/webview2/?form=MA13LH#download)下载页面下载并安装WebView2 Runtime组件，然后重启ETS2LA即可
-![](https://tc.ets2la.cn/d/img/25-12/20251213195846097.png)
+![](https://tc.ets2la.cn/25-12/20251213195846097.png)
 :::
 
 ## 3.ffmpeg下载失败
+
 如果你在安装完成之后勾选了打开ETS2LA的话你有很大概率会在控制台中看到下面这张图中的内容，这时不要紧张和害怕，有解决办法的
-![](https://tc.ets2la.cn/d/img/25-12/20251213200230431.png)
+![](https://tc.ets2la.cn/25-12/20251213200230431.png)
 
 ::: details 原因
 因为FFmpeg是从[www.gyan.dev](www.gyan.dev)位于国外的服务器上下载，加上[www.gyan.dev](www.gyan.dev)到国内的网络连接不稳定、经常中断，导致下载失败，因此你才会在ETS2LA的控制台中看到报错信息。
@@ -51,7 +54,8 @@ layout: doc
 :::
 
 ## 4.插件无法加载
-![](https://tc.ets2la.cn/d/img/25-12/20251213201259982.png)
+
+![](https://tc.ets2la.cn/25-12/20251213201259982.png)
 
 ::: details 原因
 插件加载失败通常是由于系统资源不足或启动过程中的时序问题导致的。
@@ -60,10 +64,8 @@ layout: doc
 ::: details 办法
 在 设置-全局设置-变量 中勾选上 缓慢启动，如已勾选上 缓慢启动 后仍然无法加载插件，请设置 32~64GB 的虚拟内存
 :::
+
 ## 5.启动ETS2LA时浏览器疯狂弹谷歌广告的问题
-<video width="720" controls>
-  <source src="https://tc.ets2la.cn/d/img/25-12/output.mp4" type="video/mp4">
-</video>
 
 ::: details 原因
 您正在使用老旧的 Internet Explorer 浏览器，ETS2LA不支持 该网站需要新的 WebView2 Runtime组件
@@ -83,9 +85,9 @@ layout: doc
 
 ::: details 初学者
 前往[官网](https://nodejs.org/en/download/)下载安装包，安装时一路NEXT即可
-![](https://tc.ets2la.cn/d/img/25-12/20250721083921.png)
+![](https://tc.ets2la.cn/25-12/20250721083921.png)
 如[官网](https://nodejs.org/en/download/)速度过慢，可访问[nodejs中文网](https://nodejs.cn/download/)下载安装包
-![](https://tc.ets2la.cn/d/img/25-12/20250721083940.png)
+![](https://tc.ets2la.cn/25-12/20250721083940.png)
 :::
 
 ::: details 进阶玩家
@@ -95,8 +97,8 @@ NVM下载地址：[GitHub](https://github.com/coreybutler/nvm-windows/releases) 
 
 NVM常用命令
 
-nvm install 版本号    #安装指定版本的nodejs
+nvm install 版本号 #安装指定版本的nodejs
 
-nvm use 版本号        #切换nodejs版本`
+nvm use 版本号 #切换nodejs版本`
 
 :::

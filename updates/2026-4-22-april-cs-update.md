@@ -48,9 +48,9 @@ tags: [news, C#]
 
 以下是一些关于如何将此功能与控制器进行绑定的图片参考。默认绑定的是**arrow keys**，但你当然可以将其更改为任意按键。在控制器上，**D-Pad**是个不错的选择；而在方向盘上，则可以使用你所拥有的任意按键。
 
-![控制器绑定1](https://tc.ets2la.cn/d/img/25-12/acc-controls.png)
-![控制器绑定2](https://tc.ets2la.cn/d/img/25-12/acc-controls-alt.png)
-![控制器绑定3](https://tc.ets2la.cn/d/img/25-12/acc-controls-slider.png)
+![控制器绑定1](https://tc.ets2la.cn/25-12/acc-controls.png)
+![控制器绑定2](https://tc.ets2la.cn/25-12/acc-controls-alt.png)
+![控制器绑定3](https://tc.ets2la.cn/25-12/acc-controls-slider.png)
 _可能的控制器绑定_
 此处的布局与方向键的操作方式类似，其中一个按钮必须设置在方向键之外。这在方向键上也是同样的显示效果。`NEXT` 按钮用于与用户界面交互，其他按钮的行为也会根据是否正在与用户界面交互而发生变化。
 
@@ -60,14 +60,14 @@ _可能的控制器绑定_
 
 如果您对这些示例有任何反馈，或者发现我遗漏了其他案例，请在 [Discord](https://ets2la.com/discord) 服务器上发送您的意见。关于样式和功能的各项细节目前都尚未确定，如果您希望加入某些内容，现在正是提出建议的最佳时机！
 
-![小鹏HUD 1](https://tc.ets2la.cn/d/img/25-12/2026-4-22-xpeng-hud-1.png)
-![小鹏HUD 2](https://tc.ets2la.cn/d/img/25-12/2026-4-22-xpeng-hud-2.png)
+![小鹏HUD 1](https://tc.ets2la.cn/25-12/2026-4-22-xpeng-hud-1.png)
+![小鹏HUD 2](https://tc.ets2la.cn/25-12/2026-4-22-xpeng-hud-2.png)
 _小鹏最新 AR-HUD_
 
 在我看来，目前所有HUD中，小鹏汽车的设计最为出色。理想情况下，这也是我希望 ETS2LA 中的HUD所采用的方向。既然ETS2LA也将配备独立的LKAS和自动驾驶系统，我认为添加状态指示器和一目了然的视觉提示将有助于用户。
 
-![大众HUD 1](https://tc.ets2la.cn/d/img/25-12/2026-4-22-vw-hud-1.png)
-![大众HUD 2](https://tc.ets2la.cn/d/img/25-12/2026-4-22-vw-hud-2.png)
+![大众HUD 1](https://tc.ets2la.cn/25-12/2026-4-22-vw-hud-1.png)
+![大众HUD 2](https://tc.ets2la.cn/25-12/2026-4-22-vw-hud-2.png)
 _大众的 HUD_
 
 ETS2LA 确实需要显示大量信息，而且我们的用户很喜欢当前HUD系统所包含的丰富元素。因此，我认为我们会采用类似大众汽车HUD的设计，即在左右两侧设置可切换不同信息的元素。这样我们就能显示大量信息，至少支持两层深度的信息层级。

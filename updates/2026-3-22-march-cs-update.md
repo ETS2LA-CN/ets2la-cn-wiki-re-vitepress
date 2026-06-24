@@ -31,11 +31,11 @@ tags:
 
 在 **@Roccovax** 和 **@truckermudgeon** 的帮助下，我们把 SDK 迁移到了 Linux。这是我们原生支持 Linux 计划的最后一步。我大部分时间都用来把 ETS2LA C# 适配到 Linux，这工作量很大，但也意味着我现在可以用我喜欢的系统来开发。**这次改变也终于让我们可以支持 Steam Deck 这类掌机。**
 
-![](https://tc.ets2la.cn/d/img/25-12/2026-3-18-linux.png)
-*ETS2LA Python 在 Linux 上运行（图片来自 Roccovax）*
+![](https://tc.ets2la.cn/25-12/2026-3-18-linux.png)
+_ETS2LA Python 在 Linux 上运行（图片来自 Roccovax）_
 
-![](https://tc.ets2la.cn/d/img/25-12/2026-3-18-linux-uw.png)  
-*ETS2LA C# 搭配 Linux SDK（图片由我拍摄）*
+![](https://tc.ets2la.cn/25-12/2026-3-18-linux-uw.png)  
+_ETS2LA C# 搭配 Linux SDK（图片由我拍摄）_
 
 **Q：** 你会更新已有的 Python 版本以支持 Linux 吗？  
 **A：** 不会，我个人没有时间维护。如果有其他开发者想接手我不会反对。
@@ -56,11 +56,11 @@ tags:
 
 - 订阅是**可选的，且不包含任何自动驾驶功能**。这是我的热爱项目，我多次承诺不会让 ETS2LA 变成付费，现在和未来都会坚持这个承诺。
 - 订阅收入将用于服务器成本，这意味着 **ETS2LA 网站和应用窗口中的 Google 广告会被完全移除**。
-- 订阅将包含这些功能：  
-  - 随时随地远程访问 ETS2LA 可视化界面。  
-  - 使用同一界面远程控制你的卡车。  
-  - 云端设置保存。  
-  - 在 TMP 游戏时 AR 叠加层和右侧地图上的支持者徽章。  
+- 订阅将包含这些功能：
+  - 随时随地远程访问 ETS2LA 可视化界面。
+  - 使用同一界面远程控制你的卡车。
+  - 云端设置保存。
+  - 在 TMP 游戏时 AR 叠加层和右侧地图上的支持者徽章。
   - 给第三方开发者的远程 API（包含以上功能）。本地 API 仍然免费，保持不变。
 - 订阅价格会合理（等于或低于 Trucky 的 [Angel 会员](https://truckyapp.com/support-trucky/)）。
 - 订阅**只有一个价格，没有等级，也没有年付折扣**。我们不想强迫你承诺 12 个月。你不再使用时可以随时取消订阅。
@@ -106,8 +106,8 @@ tags:
 
 #### Leo (leopri) - Range Rover Interface
 
-<img src="https://tc.ets2la.cn/d/img/25-12/2026-3-16-rr.jpg" width="400" />
-<img src="https://tc.ets2la.cn/d/img/25-12/2026-3-16-rr2.jpg" width="400" />  
+<img src="https://tc.ets2la.cn/25-12/2026-3-16-rr.jpg" width="400" />
+<img src="https://tc.ets2la.cn/25-12/2026-3-16-rr2.jpg" width="400" />  
 *来源不可靠*
 
 #### Luuukske - MonoCruise
