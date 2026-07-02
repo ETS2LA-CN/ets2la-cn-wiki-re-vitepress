@@ -47,6 +47,7 @@ title: 作者
       <a class="btn" href="https://discordapp.com/users/1095284199520469112" target="_blank" rel="noopener">Discord</a>
       <a class="btn" href="https://goodnightan.com" target="_blank" rel="noopener">Homepage</a>
     </div>
+    <!--
     <div class="media">
       <img src="/image/vx.png" alt="微信赞助二维码" />
       <img src="/image/alipay.png" alt="支付宝赞助二维码" />
@@ -54,6 +55,7 @@ title: 作者
         <img src="/image/afdian.png" alt="爱发电" />
       </a>
     </div>
+    -->
   </div>
 </div>
 

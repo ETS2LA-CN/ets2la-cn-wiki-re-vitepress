@@ -2,7 +2,6 @@
 // 为文档图片启用点击放大，并在放大时根据侧边栏宽度向右偏移，避免被遮挡
 import DefaultTheme from 'vitepress/theme'
 import SponsorModalMount from './components/SponsorModalMount.vue'
-import SponsorSidebarButton from './components/SponsorSidebarButton.vue'
 import { onMounted, watch, onUnmounted } from 'vue'
 import { useRoute, useData } from 'vitepress'
 import mediumZoom from 'medium-zoom'
@@ -62,14 +61,14 @@ const updateUptime = () => {
 }
 
 const updateVersionNav = () => {
-  const isV3 = route.path.includes('/version/v3/')
-  const headerText = isV3 ? 'v3' : 'v2'
+  const isV2 = route.path.includes('/version/v2/docs/')
+  const headerText = isV2 ? 'v2' : 'v3'
   
   // 1. 尝试修改响应式数据 (如果 theme.nav 是响应式的)
   try {
     if (theme.value.nav) {
       // 查找包含 v2 或 v3 的导航项
-      const item = theme.value.nav.find((i: any) => i.text && (i.text.includes('v2') || i.text.includes('v3')))
+      const item = theme.value.nav.find((i: any) => i.text && (i.text.includes('v3') || i.text.includes('v2')))
       if (item) {
         item.text = headerText
       }
@@ -161,10 +160,6 @@ onUnmounted(() => {
 
 <template>
   <DefaultTheme.Layout>
-    <!-- 侧边栏插槽：在侧边栏底部添加赞助按钮 -->
-    <template #sidebar-nav-after>
-      <SponsorSidebarButton />
-    </template>
     <!-- 底部插槽：在所有页面统一渲染 SponsorModalMount -->
     <template #layout-bottom>
       <SponsorModalMount />

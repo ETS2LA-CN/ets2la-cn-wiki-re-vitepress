@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /version/v2/docs/
+      link: /version/v3/docs/
     - theme: alt
       text: GitHub 仓库
       link: https://github.com/ETS2LA/Euro-Truck-Simulator-2-Lane-Assist
@@ -45,9 +45,9 @@ features:
 
 ## 第三方服务
 > [!CAUTION] 错误
-> 所有人在未取得ETS2LA国内镜像站运营者 **晚安(QQ:1804832964)** 同意的情况下均不得将任何关于 ETS2LA国内镜像站 的任何链接/地址用于第三方服务（包括但不限于[SimHub](https://www.simhubdash.com/)）
+> 所有人在未取得ETS2LA国内镜像站运营者 **晚安(邮箱：support@ets2la.cn)** 同意的情况下均不得将任何关于 ETS2LA国内镜像站 的任何链接/地址用于第三方服务（包括但不限于[SimHub](https://www.simhubdash.com/)）
 >
-> 如果你确实需要在第三方应用中使用 ETS2LA相关的链接/地址，请自行部署或咨询 **晚安(QQ:1804832964)** 进行付费服务
+> 如果你确实需要在第三方应用中使用 ETS2LA相关的链接/地址，请自行部署或咨询 **晚安(邮箱：support@ets2la.cn)** 进行付费服务
 >
 >相关仓库：
 >- 前端：[https://github.com/ETS2LA/frontend/tree/gh-pages](https://github.com/ETS2LA/frontend/tree/gh-pages)

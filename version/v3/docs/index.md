@@ -1,22 +1,18 @@
 ---
 title: 使用
-description: 使用exe安装程序自动完成安装
 layout: doc
 sidebar: true
 ---
 
 <AgreementModal />
 
-<div align="center">
+# v3 版本说明
 
-![counter](https://count.getloli.com/@:ets2la-cn-wiki=re-vitepress?theme=minecraft)
-*文档访问量*
-
-</div>
+软件已发布，但文档编写需要时间，请耐心等待
 
 # 简介
 [ETS2LA](https://github.com/ETS2LA/Euro-Truck-Simulator-2-Lane-Assist)是一款开源免费的适用于欧卡2/美卡的辅助驾驶程序
-ETS2LA项目旨在最终将自动驾驶技术引入 **SCS Software 的卡车模拟器** 。本v2文档已停止维护。如有任何疑问，请在 [kook](https://www.kookapp.cn/app/invite/VZaUPP) 中提问。
+ETS2LA项目旨在最终将自动驾驶技术引入 **SCS Software 的卡车模拟器** 。本文档仍在编写中，并将随着项目进展进行更新。如有任何疑问，请在 [kook](https://www.kookapp.cn/app/invite/VZaUPP) 中提问。
 
 ### 为什么要制作 ETS2LA？
 > 好吧，我不想在这个频道里疯狂分享我对这个程序的喜爱，因为我已经跟大家说过我有多喜欢它了，但我还是想再强调一遍：我坐轮椅，手部灵活性不够，无法自己玩这个游戏，完全是因为这个程序我才能玩！我真的非常喜欢它，也真心希望开发者们知道，我非常感谢他们为制作这个程序所付出的辛勤努力。因为我的残疾，我在现实世界中根本无法开车，而能够在模拟器里开车却能让我感到无比满足。🙂
