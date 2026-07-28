@@ -32,15 +32,3 @@ ETS2LA不仅仅是一个简单的模组，它是一套复杂的、基于SDK的�
 同时我们也有专门对应中国用户的社区——kook
 
 [加入 KOOK 社区](https://www.kookapp.cn/app/invite/VZaUPP)  
-
-## 支持我们 (Support Us)
-我们非常感谢社区对ETS2LA项目的关注和喜爱。如果您希望支持我们的工作，可以通过以下几种方式：
-- 积极反馈: 在使用中发现任何问题，请通过Discord或GitHub以及kook告诉我们。这是帮助我们改进产品的最重要方式。
-- 贡献代码: 如果您具备开发能力（项目后端主要使用Python），我们非常欢迎您Fork我们的GitHub仓库并提交您的代码贡献！
-- 支持开发者: 虽然项目本身是免费的，但开发工作需要投入大量时间和精力。如果您愿意，可以通过Ko-fi请我们喝杯咖啡，这将是对我们工作的巨大鼓励。
-- 支持国内镜像站：为了改善国内玩家的使用体验，热心的社区成员为我们搭建了国内镜像站。维护镜像站需要持续的服务器和带宽开销。如果您从中获得了便利，我们鼓励您考虑支持镜像站的运营者，以帮助他们分担这份成本，确保国内玩家能够持续获得高速、稳定的服务。
-
-[在Ko-fi上支持我们](https://ko-fi.com/tumppi066)     [访问我们的GitHub仓库](https://github.com/ETS2LA/Euro-Truck-Simulator-2-Lane-Assist)  
-[通过爱发电支持国内镜像](https://afdian.com/a/goodnightan)     
-通过微信/支付宝/云闪付支持国内镜像![](/image/vx.png)![](/image/alipay.png)
-所有赞助镜像的用户均会在[赞助名单](https://docs.ets2la.cn/sponsored)中显示，感谢您的支持！

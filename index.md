@@ -17,6 +17,9 @@ hero:
       text: GitHub 仓库
       link: https://github.com/ETS2LA/Euro-Truck-Simulator-2-Lane-Assist
     - theme: alt
+      text: 国内镜像仓库
+      link: https://cnb.cool/ETS2LA-CN/Euro-Truck-Simulator-2-Lane-Assist
+    - theme: alt
       text: 作者
       link: /author/
     
