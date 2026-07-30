@@ -49,3 +49,7 @@ layout: doc
 ![](/image/v3/ETS2LA%20install4.png)
 安装完成后默认勾选`启动ETS2LA`，然后点击完成
 ![](/image/v3/ETS2LA%20install5.png)
+
+::: tip 提示
+目前对于A卡可能会无法渲染路径线的问题 这不是你的问题 需耐心等待作者修复即可
+:::
