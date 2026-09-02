@@ -23,10 +23,11 @@ const SORT_ORDER: Record<string, number> = {
   "base": 1,
   "advanced": 2,
   "bug": 3,
-  "install.md": 10,
-  "use.md": 20,
-  "plugins.md": 30,
-  "page.md": 40
+  "paper.md": 10,
+  "install.md": 20,
+  "use.md": 30,
+  "plugins.md": 40,
+  "page.md": 50
 };
 
 const COLLAPSED_FOLDERS = ["advanced", "bug"];
