@@ -7,61 +7,54 @@ layout: doc
 # 基础使用
 
 ::: tip 提醒
-1.目前不支持中文 请等待后续支持
-
-2.目前对于A卡可能会无法渲染路径线的问题 这不是你的问题 需耐心等待作者修复即可
+1.目前对于A卡可能会无法渲染路径线的问题 这不是你的问题 需耐心等待作者修复即可
 :::
 
 ### 1. 新手引导
-第一次打开软件你会遇见以下情况
-![](/image/v3/ETS2LA%20start1.png)
-点击键盘上`右边的Alt`按键并点击`ShowMessage`以来关闭
-
-<video controls width="640">
-  <source src="/videos/2026-07-03-08-25-18.mp4" type="video/mp4" />
-  您的浏览器不支持播放视频。
-</video> 
-
-### 2. 安装sdk {#sdk-install}
-依次在软件里点击 `Settings`-`SDK`-`点击当前版本你要安装的SDK`
-![](/image/v3/ETS2LA%20use1.png)
-当你看见这个时 代表安装成功
-![](/image/v3/ETS2LA%20use2.png)
-
-### 3. 安装插件
-依次在软件里点击 `Catalogue`-`刷新`-`把刷新后显示的6个插件都点上(制作教程时只有这么多)`
-![](/image/v3/ETS2LA%20use3.png)
-点击Restart ETS2LA 并等待ETS2LA重启
-![](/image/v3/ETS2LA%20use4.png)
-ETS2LA重启后 点击`Manager`把4个插件启动(制作教程时只有这么多)
-![](/image/v3/ETS2LA%20use5.png)
-
-### 4. 覆盖层
-如果觉得这些内容碍眼可以点击键盘上`右边的Alt`按键进行调整与关闭
-![](/image/v3/ETS2LA%20use6.png)
-![](/image/v3/ETS2LA%20use7.png)
-
-## 5. 按键更改
-由于ETS2LA默认使用同一个按键来控制自动转向与自动油门 但这样可能会导致启动了自动油门但是自动转向无法使用的问题 所以我们建议你更改控制按键
-依次在软件里点击 `Settings`-`Controls`-`分别点击Assist和SET/OK`修改你想要使用的按键(尽量不要使用和游戏冲突的按键)
-![](/image/v3/ETS2LA%20use8.png)
+第一次打开软件你看到的界面应该是这样的，左上角的是软件的控制台，显示的是实时日志，屏幕中心显示的是软件主界面。
+![](https://tuchuang.ets2la.cn/csharp/20260902105022759.png)
+软件刚打开会让你选择语言，点击 `English - English` 位置即可显示下拉框，
+![](https://tuchuang.ets2la.cn/csharp/20260902105357282.png)
+在下拉框中选择 `简体中文 - Chinese Simplified` ，然后点击 `restart`， 
+![](https://tuchuang.ets2la.cn/csharp/20260902105535637.png)
+软件会重启并切换到简体中文，然后点击 `下一步`。
+![](https://tuchuang.ets2la.cn/csharp/20260902105738910.png)
+软件会自动识别游戏的安装目录，点击 `Install SDKs` 来安装SDK（**SDK的安装需要在游戏未启动的状态下进行，游戏在运行时安装会导致SDK安装不上**）
+![](https://tuchuang.ets2la.cn/csharp/20260902105919457.png)
+只有当SDK安装完成之后才能点击 `继续`
+![](https://tuchuang.ets2la.cn/csharp/20260902105942369.png)
+游戏更新之后记得在软件 `设置` 中重新安装SDK（这是一条提醒），然后点击 `我明白` 按钮继续引导流程
+![](https://tuchuang.ets2la.cn/csharp/20260902110042516.png)
+软件会告诉你叠加层的概念（实时日志也属于叠加层的一部分），并告诉你如何调整叠加层，
+![](https://tuchuang.ets2la.cn/csharp/20260902110220180.png)
+如果你的键盘没有 **右Alt** 键，你需要点击 `键盘 按键 RightAlt` 部分来修改按键（点击之后需要在5秒内在键盘上有输入，超过5秒则认定为绑定超时）
+![](https://tuchuang.ets2la.cn/csharp/20260902110444333.png)
+如果你不需要修改按键则尝试**按住** 右Alt键不松，软件的按键部分会变色进行提示表明功能正常
+按住按键之后会在屏幕中间看到 `控制台` 等字样，点击则可对其进行关闭
+![](https://tuchuang.ets2la.cn/csharp/20260902110853089.png)
+点击继续则继续进行引导流程
+![](https://tuchuang.ets2la.cn/csharp/20260902110924579.png)
+然后会是一些辅助说明，需要详细阅读并进行测试以理解（**这对后面的使用非常重要**）
+![](https://tuchuang.ets2la.cn/csharp/20260902112826365.png)
+具体操作方式可以简单理解为
+1. 先使用 ← 键来设置辅助模式
+2. 在选择到想使用的模式之后使用 ↑ 和 ↓ 键来启动（↑ 键不会修改设定的速度，↓ 键会修改设定的速度）
+3. 当速度过快时可使用 ↓ 键来降低速度
+4. 当速度过慢时可使用 ↑ 键来增加速度
+5. 再次按下 ← 键则为 取消辅助
+简单总结就是 在辅助 **未启用** 的状态下 ← 键用来控制模式选择，在辅助 **启用** 状态下用来关闭辅助，↑、↓键用来控制速度
+理解这部分之后点击`继续` 接着引导流程
+![](https://tuchuang.ets2la.cn/csharp/20260902113238822.png)
+推荐插件页面建议直接点击 `安装插件` ，如点击 `继续` 则后续需要在 `插件库` 中安装插件
+![](https://tuchuang.ets2la.cn/csharp/20260902113319985.png)
+插件安装完成之后点击重启并继续
+![](https://tuchuang.ets2la.cn/csharp/20260902113354008.png)
+免责声明这边看一下即可，不做过多说明
+![](https://tuchuang.ets2la.cn/csharp/20260902113512404.png)
+![](https://tuchuang.ets2la.cn/csharp/20260902113522437.png)
+引导流程结束之后点击**文字**所指位置的点即可打开侧边栏
+![](https://tuchuang.ets2la.cn/csharp/20260902113543723.png)
 
 ## 6. 更新
 
-由于软件仍在开发中，所以及时更新软件就显得极为重要，ETS2LA的更新总共分为四总方式，分别为软件内和软件外
-
-### 6.1 软件内
-
-#### 6.1.1 检测到更新
-
-点击软件`Settings`-`Updates`，然后在加载出来的页面点击`Install and Restart`
-![](/image/v3/updates1.png)
-
-#### 6.1.2 未检测到更新
-如果作者发布了新的版本 但是在加载ETS2LA时没有检测到 可以点击软件`Settings`-`Updates`，然后在加载出来的页面点击`Check for Updates`等待重新检测 如有可以点击`Install and Restart`进行更新
-![](/image/v3/update2.png)
-
-### 6.2 软件外
-
-打开你的ETS2LA安装目录（如果不知道并且在桌面创建了快捷方式的可以右键`打开文件所在位置`）找到`update.exe`这个文件并双击运行即可触发更新进程
-![](/image/v3/update3.png)
+由于软件仍在开发中，所以及时更新软件就显得极为重要，在软件侧边栏的 `设置` 中找到 `检查更新` 的字样，选择 `release` 当有更新是会显示，进行安装即可
