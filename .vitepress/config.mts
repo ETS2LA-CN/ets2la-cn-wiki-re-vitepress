@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { set_sidebar } from './auto_sidebar.ts'
+import { getPageContributors } from './git_contributors.ts'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -69,6 +70,14 @@ export default defineConfig({
     markdown:{
       image:{
           lazyLoading:true
+      }
+    },
+
+    // 为每个文档页注入 git 贡献者，供页脚展示
+    transformPageData(pageData) {
+      const relativePath = (pageData.filePath || pageData.relativePath || '').replace(/\\/g, '/')
+      return {
+        contributors: getPageContributors(relativePath)
       }
     }
 })

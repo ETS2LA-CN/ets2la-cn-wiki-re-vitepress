@@ -16,7 +16,8 @@ const FOLDER_MAP: Record<string, string> = {
   "base": "基础",
   "advanced": "高级",
   "bug": "常见问题",
-  "mobile": "移动设备访问"
+  "mobile": "移动设备访问",
+  "ui-Introduction": "UI介绍"
 };
 
 const SORT_ORDER: Record<string, number> = {

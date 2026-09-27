@@ -2,6 +2,7 @@
 // 为文档图片启用点击放大，并在放大时根据侧边栏宽度向右偏移，避免被遮挡
 import DefaultTheme from 'vitepress/theme'
 import SponsorModalMount from './components/SponsorModalMount.vue'
+import PageContributors from './components/PageContributors.vue'
 import { onMounted, watch, onUnmounted } from 'vue'
 import { useRoute, useData } from 'vitepress'
 import mediumZoom from 'medium-zoom'
@@ -160,6 +161,10 @@ onUnmounted(() => {
 
 <template>
   <DefaultTheme.Layout>
+    <!-- 文档页脚前展示 git 贡献者 -->
+    <template #doc-footer-before>
+      <PageContributors />
+    </template>
     <!-- 底部插槽：在所有页面统一渲染 SponsorModalMount -->
     <template #layout-bottom>
       <SponsorModalMount />
