@@ -12,30 +12,30 @@ layout: doc
 
 ### 1. 新手引导
 第一次打开软件你看到的界面应该是这样的，左上角的是软件的控制台，显示的是实时日志，屏幕中心显示的是软件主界面。
-![](https://tuchuang.ets2la.cn/csharp/20260902105022759.png)
+![](https://tc.ets2la.cn/csharp/20260902105022759.png)
 软件刚打开会让你选择语言，点击 `English - English` 位置即可显示下拉框，
-![](https://tuchuang.ets2la.cn/csharp/20260902105357282.png)
+![](https://tc.ets2la.cn/csharp/20260902105357282.png)
 在下拉框中选择 `简体中文 - Chinese Simplified` ，然后点击 `restart`， 
-![](https://tuchuang.ets2la.cn/csharp/20260902105535637.png)
+![](https://tc.ets2la.cn/csharp/20260902105535637.png)
 软件会重启并切换到简体中文，然后点击 `下一步`。
-![](https://tuchuang.ets2la.cn/csharp/20260902105738910.png)
+![](https://tc.ets2la.cn/csharp/20260902105738910.png)
 软件会自动识别游戏的安装目录，点击 `Install SDKs` 来安装SDK（**SDK的安装需要在游戏未启动的状态下进行，游戏在运行时安装会导致SDK安装不上**）
-![](https://tuchuang.ets2la.cn/csharp/20260902105919457.png)
+![](https://tc.ets2la.cn/csharp/20260902105919457.png)
 只有当SDK安装完成之后才能点击 `继续`
-![](https://tuchuang.ets2la.cn/csharp/20260902105942369.png)
+![](https://tc.ets2la.cn/csharp/20260902105942369.png)
 游戏更新之后记得在软件 `设置` 中重新安装SDK（这是一条提醒），然后点击 `我明白` 按钮继续引导流程
-![](https://tuchuang.ets2la.cn/csharp/20260902110042516.png)
+![](https://tc.ets2la.cn/csharp/20260902110042516.png)
 软件会告诉你叠加层的概念（实时日志也属于叠加层的一部分），并告诉你如何调整叠加层，
-![](https://tuchuang.ets2la.cn/csharp/20260902110220180.png)
+![](https://tc.ets2la.cn/csharp/20260902110220180.png)
 如果你的键盘没有 **右Alt** 键，你需要点击 `键盘 按键 RightAlt` 部分来修改按键（点击之后需要在5秒内在键盘上有输入，超过5秒则认定为绑定超时）
-![](https://tuchuang.ets2la.cn/csharp/20260902110444333.png)
+![](https://tc.ets2la.cn/csharp/20260902110444333.png)
 如果你不需要修改按键则尝试**点按** 右Alt键，软件的按键部分会变色进行提示表明功能正常
 按住按键之后会在屏幕中间看到 `控制台` 等字样，点击则可对其进行关闭
-![](https://tuchuang.ets2la.cn/csharp/20260902110853089.png)
+![](https://tc.ets2la.cn/csharp/20260902110853089.png)
 点击继续则继续进行引导流程
-![](https://tuchuang.ets2la.cn/csharp/20260902110924579.png)
+![](https://tc.ets2la.cn/csharp/20260902110924579.png)
 然后会是一些辅助说明，需要详细阅读并进行测试以理解（**这对后面的使用非常重要**）
-![](https://tuchuang.ets2la.cn/csharp/20260927085443911.png)
+![](https://tc.ets2la.cn/csharp/20260927085443911.png)
 具体操作方式可以简单理解为
 1. 先使用 ← 键来设置辅助模式
 2. 在选择到想使用的模式之后使用 ↑ 和 ↓ 键来启动（↑ 键不会修改设定的速度，↓ 键会修改设定的速度）
@@ -44,16 +44,16 @@ layout: doc
 5. 再次按下 ← 键则为 取消辅助
 简单总结就是 在辅助 **未启用** 的状态下 ← 键用来控制模式选择，在辅助 **启用** 状态下用来关闭辅助，↑、↓键用来控制速度
 理解这部分之后点击`继续` 接着引导流程
-![](https://tuchuang.ets2la.cn/csharp/20260927085527464.png)
+![](https://tc.ets2la.cn/csharp/20260927085527464.png)
 推荐插件页面建议直接点击 `安装插件` ，如点击 `继续` 则后续需要在 `插件库` 中安装插件
-![](https://tuchuang.ets2la.cn/csharp/20260902113319985.png)
+![](https://tc.ets2la.cn/csharp/20260902113319985.png)
 插件安装完成之后点击重启并继续
-![](https://tuchuang.ets2la.cn/csharp/20260902113354008.png)
+![](https://tc.ets2la.cn/csharp/20260902113354008.png)
 免责声明这边看一下即可，不做过多说明
-![](https://tuchuang.ets2la.cn/csharp/20260902113512404.png)
-![](https://tuchuang.ets2la.cn/csharp/20260902113522437.png)
+![](https://tc.ets2la.cn/csharp/20260902113512404.png)
+![](https://tc.ets2la.cn/csharp/20260902113522437.png)
 引导流程结束之后点击**文字**所指位置的点即可打开侧边栏
-![](https://tuchuang.ets2la.cn/csharp/20260902113543723.png)
+![](https://tc.ets2la.cn/csharp/20260902113543723.png)
 
 ## 6. 更新
 
