@@ -57,3 +57,13 @@ features:
 >- 前端：[https://github.com/ETS2LA/frontend/tree/gh-pages](https://github.com/ETS2LA/frontend/tree/gh-pages)
 >- 可视化左侧：[https://github.com/ETS2LA/maps/tree/pages](https://github.com/ETS2LA/maps/tree/pages)
 >- 可视化右侧：[https://github.com/ETS2LA/visualization](https://github.com/ETS2LA/visualization)
+
+## 服务状态
+
+### ETS2LA C# 插件下载
+
+<iframe src="https://status.ets2la.cn/embed/monitor-ets2la-cn-c-plugins-downloads?theme=dark&days=90" width="100%" height="70" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+### ETS2LA c# 后端
+
+<iframe src="https://status.ets2la.cn/embed/monitor-ets2la-cn-c-backed-zong?theme=dark&days=90" width="100%" height="70" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
