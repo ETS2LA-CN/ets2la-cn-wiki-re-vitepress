@@ -27,6 +27,7 @@ export default defineConfig({
       { text: '作者', link: '/author/' },
       { text: '关于', link: '/about/' },
       { text: '赞助名单', link: '/sponsored/' },
+      { text: '服务隐私政策', link: '/service-privacy/' },
       {
         text: 'v3',
         items: [
