@@ -13,7 +13,7 @@ layout: doc
 启动如果出现黑屏，下面是解决方法
 
 NVIDIA - 重新安装驱动，并在 NVIDIA App 程序中将 OpenGL GDI 兼容性设为「首选兼容」。
-AMD - 尝试安装这个程序驱动：[whql-amd-software-adrenalin-edition-24.10.1-win10-win11-oct-rdna](https://drivers.amd.com/drivers/whql-amd-software-adrenalin-edition-24.10.1-win10-win11-oct-rdna.exe)。
+AMD - 尝试安装这个程序驱动：[whql-amd-software-adrenalin-edition-24.10.1-win10-win11-oct-rdna](https://drivers.amd.com/drivers/whql-amd-software-adrenalin-edition-24.10.1-win10-win11-oct-rdna.exe) 或者在设置中关闭 **自动管理应用的颜色**
 
 ::: tip 小提示
 点击蓝字即可跳转至网站
