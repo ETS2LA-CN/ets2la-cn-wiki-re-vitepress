@@ -96,3 +96,8 @@ CNB/国内镜像站 ——> 国内镜像地址（使用华为云CDN进行分发�
 
 1. [OpenAuthenticator/开源验证器](https://appgallery.huawei.com/app/detail?id=com.example.tool_2fa&channelId=SHARE&source=appshare) 应用商店
    :::
+
+::: tip 提示
+根据最新的 服务隐私政策 ，未满 **十四** 周岁用户不要使用 **账户** 功能
+
+:::
